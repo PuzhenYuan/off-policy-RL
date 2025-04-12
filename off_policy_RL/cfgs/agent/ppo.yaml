@@ -1,0 +1,17 @@
+_target_: agent.ppo.PPOAgent
+nstep: ${buffer.nstep}
+hidden_dim: [256, 256, 256]
+lr_actor: 1.0e-4
+lr_critic: 1.0e-4
+gamma: 0.99
+tau: 0.95
+clip_param: 0.2
+ppo_epoch: 4
+mini_batch_size: 64
+log_std_min: -20
+log_std_max: 1
+eps_schedule: linear(1, 0.05, 1000, 100000)
+target_kl: 0.01
+entropy_coef: 0.01
+value_loss_coef: 0.5
+initial_penalty: 1.0
