@@ -2,11 +2,16 @@
 Implemented several off-policy RL algorithms with continuous action space.
 Use LunarLander as the default environment.
 
+<img src="photo/ddpg.png" width="100%">
+<img src="photo/td3.png" width="100%">
+<img src="photo/bac.png" width="100%">
+<img src="photo/sac.png" width="100%">
+
 ## implemented RL algorithms:
 - Deep Deterministic Policy Gradient (DDPG)
 - Twin Delayed DDPG (TD3)
-- Soft Actor Critic (SAC)
 - Batch Actor Critic (BAC)
+- Soft Actor Critic (SAC)
 
 ## Installation
 1. Prepare Python environment, Python 3.10 is recommended
